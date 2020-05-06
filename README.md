@@ -7,13 +7,15 @@
 
 1. Request a free "Personal Student" license from [Mujoco simulator website](https://www.roboti.us/license.html). It will be valid for one year. 
 
-2. Follow the instructions on Github to install `dm_control`: https://github.com/deepmind/dm_control
+2. Install [OpenAI Gym](https://github.com/openai/gym).
+
+3. Follow the instructions on Github to install `dm_control`: https://github.com/deepmind/dm_control
 
     1. If you are using Mac OS X but cannot install `dm_control` successfully, consider using [Docker](https://www.docker.com/why-docker). Think of it as a lightweight "virtual machine" that can run Ubuntu on your Mac without much overhead. Read the tutorials on how to write a `Dockerfile` and run the container.  
     
     2. You can also use [Google CoLab](https://colab.research.google.com/) that provides free access to linux and GPU. This is recommended if your laptop/desktop does not have enough computing power. 
 
-3. Copy over `dmc_wrapper.py` in this package to your project. 
+4. Copy over `dmc_wrapper.py` in this package to your project. 
 
 
 ### Usage
