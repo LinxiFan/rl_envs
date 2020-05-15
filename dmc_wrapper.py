@@ -9,10 +9,12 @@ from gym.envs.registration import register
 from typing import Union, Tuple, Optional
 
 
+ENTRYPOINT = 'FILL.IN.YOUR.MODULE.PATH:DMControlWrapper'
+
+
 __all__ = [
     'make', 'make_visual_benchmark', 'ALL_TASKS'
 ]
-
 
 def make(
         name: Union[str, Tuple[str, str]],
@@ -55,7 +57,7 @@ def make(
             task_kwargs['time_limit'] = time_limit
         register(
             id=env_id,
-            entry_point='enlight.envs.dm_control:DMControlWrapper',
+            entry_point=ENTRYPOINT,
             kwargs=dict(
                 domain_name=domain_name,
                 task_name=task_name,

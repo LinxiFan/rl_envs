@@ -1,6 +1,5 @@
 # RL Envs
 
-
 ## DM Control
 
 ### Installation
@@ -16,6 +15,8 @@
     2. You can also use [Google CoLab](https://colab.research.google.com/) that provides free access to linux and GPU. This is recommended if your laptop/desktop does not have enough computing power. 
 
 4. Copy over `dmc_wrapper.py` in this package to your project. 
+
+5. Set the `ENTRYPOINT` variable in `dmc_wrapper.py` to point to your project module path.
 
 
 ### Usage
