@@ -365,9 +365,14 @@ def wrap_deepmind(
 
 def make_atari_benchmark(env_id, train: bool):
     """
+    The observation object has type `LazyFrames` for memory optimization.
+    It can be easily converted to regular numpy array by `np.array(obs, copy=False)`,
+    or you can use the `LazyFrames` method `obs.to_numpy()`.
+
     Args:
         train: True for training, False for eval
             in eval mode, reward will not be clipped
+
     """
     env = make_atari(env_id, max_episode_steps=None, sticky_actions=False)
     return wrap_deepmind(
