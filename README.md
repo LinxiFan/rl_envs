@@ -1,6 +1,26 @@
 # RL Envs
 
+## Atari Games Suite
+
+1. Please follow the official installation instructions from [OpenAI Gym](https://github.com/openai/gym#installation) with Atari support. The following command should suffice:
+
+    ```bash
+    pip install 'gym[atari]'
+    ```
+   
+   You also need to install OpenCV for python. If you use Anaconda, you can run:
+   
+   ```bash
+   conda install -c conda-forge opencv
+   ```
+
+2. Copy `atari_wrapper.py` in this repo to your project. It is self-contained.
+
+3. The relevant environment creation function is `make_atari_benchmark(game, train)`. `game` specifies the Atari game ID (e.g. `"enduro", "pong", "beam_rider"`). Set `train=True` for training and `train=False` for evaluation report. The only difference between training and evaluation is reward clipping. 
+
 ## DM Control
+
+[Please ignore this section]
 
 ### Installation
 
