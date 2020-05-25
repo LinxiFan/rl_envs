@@ -19,6 +19,8 @@
     * `game` specifies the Atari game ID (e.g. `"enduro", "pong", "beam_rider"`). 
     * Set `train=True` for training and `train=False` for evaluation report. The only difference between training and evaluation is reward clipping. 
 
+4. The returned observation object has type `LazyFrames` for memory optimization. It can be easily converted to regular numpy array by `np.array(obs, copy=False)`, or you can use the `LazyFrames` method `obs.to_numpy()`.
+
 ## DM Control
 
 [Please ignore this section]

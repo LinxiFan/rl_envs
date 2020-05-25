@@ -312,6 +312,9 @@ class LazyFrames(object):
     def frame(self, i):
         return self._force()[..., i]
 
+    def to_numpy(self):
+        return np.array(self, copy=False)
+
 
 def make_atari(env_id, max_episode_steps=None, sticky_actions: bool = False):
     """
