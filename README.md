@@ -8,15 +8,16 @@
     pip install 'gym[atari]'
     ```
    
-   You also need to install OpenCV for python. If you use Anaconda, you can run:
-   
-   ```bash
-   conda install -c conda-forge opencv
-   ```
+   You also need to install OpenCV for python.
+
+   * If you use regular pip: `pip install opencv-python` 
+   * If you use Anaconda: `conda install -c conda-forge opencv` 
 
 2. Copy `atari_wrapper.py` in this repo to your project. It is self-contained.
 
-3. The relevant environment creation function is `make_atari_benchmark(game, train)`. `game` specifies the Atari game ID (e.g. `"enduro", "pong", "beam_rider"`). Set `train=True` for training and `train=False` for evaluation report. The only difference between training and evaluation is reward clipping. 
+3. The relevant environment creation function is `make_atari_benchmark(game, train)`. 
+    * `game` specifies the Atari game ID (e.g. `"enduro", "pong", "beam_rider"`). 
+    * Set `train=True` for training and `train=False` for evaluation report. The only difference between training and evaluation is reward clipping. 
 
 ## DM Control
 
